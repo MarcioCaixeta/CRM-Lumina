@@ -1,7 +1,12 @@
-{
-  "name": "crm-lumina-api",
-  "version": "1.0.0",
-  "main": "server.js",
-  "type": "module",
-  "scripts": { "start": "node server.js" }
+"dependencies": {
+  "...": "...",
+  "@prisma/client": "^6.0.0"
+},
+"devDependencies": {
+  "prisma": "^6.0.0"
+},
+"scripts": {
+  "start": "node server.js",
+  "db:migrate": "prisma migrate deploy",
+  "db:generate": "prisma generate"
 }
